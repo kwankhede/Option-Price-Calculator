@@ -184,3 +184,8 @@ if calculate_button:
         title="Option Price vs. Underlying Price",
     )
     st.plotly_chart(fig)
+
+
+
+# Add the footer
+st.sidebar.markdown("Made with ❤️ by Sanghamitra-fintech @2023")
