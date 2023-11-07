@@ -3,7 +3,7 @@
 ```markdown
 # European Option Price Calculator
 
-## Introduction
+##Introduction
 
 The European Option Price Calculator is a tool for calculating the prices of European call and put options using the Black-Scholes-Merton (BSM) model. It also calculates the Greeks (delta, gamma, vega, theta, and rho) for the specified option.
 
