@@ -4,6 +4,8 @@
 
 ## Introduction
 
+A stock option is the right to buy or sell a stock at an agreed price and date. The two types of options used for different situations are either calls, betting a stock will increase in value , or puts, betting a stock will decrease in value (however this is not always true, discussed at the end). Each options contract represents 100 shares of that stock.
+
 The European Option Price Calculator is a tool for calculating the prices of European call and put options using the Black-Scholes-Merton (BSM) model. It also calculates the Greeks (delta, gamma, vega, theta, and rho) for the specified option.
 
 ## Usage
