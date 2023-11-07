@@ -2,8 +2,7 @@ streamlit
 pandas
 matplotlib
 seaborn
-numpy 
-math 
-datetime 
-spicy 
-plotly.express 
+numpy
+scipy
+plotly
+
