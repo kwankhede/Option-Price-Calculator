@@ -23,6 +23,9 @@ Once you have entered the parameters, click the "Calculate" button. The calculat
 
 ## Option Pricing Formulas
 
+![Image Description](https://miro.medium.com/max/904/1*82ZaRKWa3gUCCdTrZGeUlQ.png)
+
+
 ### Black-Scholes Formula for Call Option
 
 The Black-Scholes formula for calculating the theoretical price of a European call option is as follows:
