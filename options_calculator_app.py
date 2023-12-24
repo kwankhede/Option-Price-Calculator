@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 from scipy.stats import norm
 from datetime import datetime, timedelta
+import time  # Import the time library
 
 N = norm.cdf
 
@@ -189,3 +190,8 @@ if calculate_button:
 
 # Add the footer
 st.sidebar.markdown("Made with ❤️ by Sanghamitra-fintech @2023")
+
+# Rerun the app every 5 hours
+while True:
+    main()  # Call the main function to execute the app logic
+    time.sleep(5 * 60 * 60)  # Sleep for 5 hours (in seconds)
