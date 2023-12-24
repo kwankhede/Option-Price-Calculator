@@ -177,4 +177,6 @@ if calculate_button:
     )
     st.plotly_chart(fig)
 
-
+# Add the "Rerun App Every 5 Hours" button
+if st.button("Rerun App Every 5 Hours"):
+    st.experimental_rerun()
