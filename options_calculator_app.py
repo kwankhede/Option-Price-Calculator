@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 from scipy.stats import norm
 from datetime import datetime, timedelta
-import time  # Import the time library
 
 N = norm.cdf
 
@@ -82,11 +81,7 @@ def classify_option(intrinsic_value):
 
 
 # Streamlit UI
-st.title("Europian Option Price Calculator")
-
-# Initialize session state
-if "on_first_streamlit_run" not in st.session_state:
-    st.session_state.on_first_streamlit_run = True
+st.title("European Option Price Calculator")
 
 # Create a sidebar for input parameters
 st.sidebar.title("Input Parameters")
@@ -122,10 +117,6 @@ option_type = st.sidebar.selectbox(
 calculate_button = st.sidebar.button("Calculate", key="calculate_button")
 
 # Automatically trigger calculation when the app loads
-if st.session_state.on_first_streamlit_run:
-    st.session_state.on_first_streamlit_run = False
-    calculate_button = True
-
 if calculate_button:
     if option_type == "call":
         option_price = BS_CALL(
@@ -186,12 +177,6 @@ if calculate_button:
     )
     st.plotly_chart(fig)
 
-
-
-# Add the footer
-st.sidebar.markdown("Made with ❤️ by Sanghamitra-fintech @2023")
-
-# Rerun the app every 5 hours
-while True:
-    main()  # Call the main function to execute the app logic
-    time.sleep(5 * 60 * 60)  # Sleep for 5 hours (in seconds)
+# Add the "Rerun App Every 5 Hours" button
+if st.button("Rerun App Every 5 Hours"):
+    st.experimental_rerun()
